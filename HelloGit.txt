@@ -1,1 +1,2 @@
 Hello Git!
+Create some changes to make second version of git.
