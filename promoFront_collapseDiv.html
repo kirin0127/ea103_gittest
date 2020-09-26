@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promotion Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style type="text/css">
+      div.row.border:hover{
+        background-color: #E5E7E9;
+      }
+      div.row.border:nth-child(2){
+        background-color: white;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row m-2">
+      <div class="col-2">
+        <button class="btn btn-block btn-primary">新增</button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-block btn-danger">刪除</button>
+      </div>
+      <div class="col">&nbsp;</div>
+      <div class="col-4 d-flex">
+        <input type="text" class="form-control" placeholder="Search...">
+      </div>
+    </div>
+    <div class="row border p-3">
+      <div class="col col-1 h4">#</div>
+      <div class="col col-3 h4">促銷專案名稱</div>
+      <div class="col col-3 h4">促銷開始時間</div>
+      <div class="col col-3 h4">促銷結束時間</div>
+      <div class="col col-2 h4">促銷狀態</div>
+    </div>
+    <div class="row border p-3" data-toggle="collapse" data-target="#row01">
+      <div class="col col-1 h5"><a href="https://google.com">01</a></div>
+      <div class="col col-3 h5"><a href="https://google.com">2020 中秋專案</a></div>
+      <div class="col col-3 h5">2020/09/26</div>
+      <div class="col col-3 h5">2020/10/11</div>
+      <div class="col col-2 h5">啟用</div>
+    </div>
+    <div class="row collapse" id="row01">
+      <div class="card w-100">
+        <div class="card-header h5">營位</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">豪華巨大水床小木屋</div>
+                <div class="col"><del>80000</del>&nbsp;&nbsp;79999</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">平民睡地板露營位子</div>
+                <div class="col"><del>3000</del>&nbsp;&nbsp;1600</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row01">
+      <div class="card w-100">
+        <div class="card-header h5">裝備</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">施華洛世奇水晶露營燈</div>
+                <div class="col"><del>2500</del>&nbsp;&nbsp;2000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">天才小釣手同款釣竿</div>
+                <div class="col"><del>2000</del>&nbsp;&nbsp;1200</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">3</div>
+                <div class="col-6">狂野趴踢高腳燒烤架</div>
+                <div class="col"><del>1600</del>&nbsp;&nbsp;900</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row01">
+      <div class="card w-100">
+        <div class="card-header h5">食材</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">日本神戶A10和牛牛排</div>
+                <div class="col"><del>3600</del>&nbsp;&nbsp;3000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">西班牙伊比利豬肉片</div>
+                <div class="col"><del>2400</del>&nbsp;&nbsp;2200</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">3</div>
+                <div class="col-6">挪威空運鮭魚排</div>
+                <div class="col"><del>2800</del>&nbsp;&nbsp;2600</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">4</div>
+                <div class="col-6">法國現採牛奶生蠔</div>
+                <div class="col"><del>1200</del>&nbsp;&nbsp;800</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">5</div>
+                <div class="col-6">義大利起司之王帕瑪森</div>
+                <div class="col"><del>1800</del>&nbsp;&nbsp;1600</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row border p-3" data-toggle="collapse" data-target="#row02">
+      <div class="col col-1 h5">02</div>
+      <div class="col col-3 h5">2020 跨年專案</div>
+      <div class="col col-3 h5">2020/12/25</div>
+      <div class="col col-3 h5">2020/01/10</div>
+      <div class="col col-2 h5">啟用</div>
+    </div>
+    <div class="row collapse" id="row02">
+      <div class="card w-100">
+        <div class="card-header h5">營位</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">泰姬瑪哈陵等級木屋</div>
+                <div class="col"><del>9999999</del>&nbsp;&nbsp;9999999</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row02">
+      <div class="card w-100">
+        <div class="card-header h5">裝備</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">加十鍋鏟</div>
+                <div class="col"><del>2500</del>&nbsp;&nbsp;2000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">幽靈波利斗篷</div>
+                <div class="col"><del>2000</del>&nbsp;&nbsp;1200</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row02">
+      <div class="card w-100">
+        <div class="card-header h5">食材</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">日本神戶A10和牛牛排</div>
+                <div class="col"><del>3600</del>&nbsp;&nbsp;3000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">西班牙伊比利豬肉片</div>
+                <div class="col"><del>2400</del>&nbsp;&nbsp;2200</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">3</div>
+                <div class="col-6">挪威空運鮭魚排</div>
+                <div class="col"><del>2800</del>&nbsp;&nbsp;2600</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">4</div>
+                <div class="col-6">法國現採牛奶生蠔</div>
+                <div class="col"><del>1200</del>&nbsp;&nbsp;800</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row border p-3" data-toggle="collapse" data-target="#row03">
+      <div class="col col-1 h5">03</div>
+      <div class="col col-3 h5">2021 年節專案</div>
+      <div class="col col-3 h5">2021/02/10</div>
+      <div class="col col-3 h5">2021/02/28</div>
+      <div class="col col-2 h5">未啟用</div>
+    </div>
+    <div class="row collapse" id="row03">
+      <div class="card w-100">
+        <div class="card-header h5">營位</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">普通的營位</div>
+                <div class="col"><del>8000</del>&nbsp;&nbsp;7999</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row03">
+      <div class="card w-100">
+        <div class="card-header h5">裝備</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">叢林之王帳篷</div>
+                <div class="col"><del>2500</del>&nbsp;&nbsp;2000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">超好睡睡袋</div>
+                <div class="col"><del>1600</del>&nbsp;&nbsp;900</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row collapse" id="row03">
+      <div class="card w-100">
+        <div class="card-header h5">食材</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">1</div>
+                <div class="col-6">日本神戶A10和牛牛排</div>
+                <div class="col"><del>3600</del>&nbsp;&nbsp;3000</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">2</div>
+                <div class="col-6">西班牙伊比利豬肉片</div>
+                <div class="col"><del>2400</del>&nbsp;&nbsp;2200</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-1">3</div>
+                <div class="col-6">挪威空運鮭魚排</div>
+                <div class="col"><del>2800</del>&nbsp;&nbsp;2600</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  // prevent user click proName or proNo to trigger collapse details.
+  var proNames = document.querySelectorAll("a");
+  proNames.forEach(function(proName){
+    proName.onclick = function(event){
+      event.stopPropagation();
+    };
+  });
+  // change filter icon when filter is opened.
+</script>
+</html>
